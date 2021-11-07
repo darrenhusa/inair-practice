@@ -14,6 +14,8 @@
     <h1>Testing Vue 2</h1>
     <div id="app">
         <p>@{{ message }}</p>
+
+        <example-component></example-component>
     </div>
 
     <h2>Stacked Column chart</h2>
@@ -28,7 +30,10 @@
     </div>
     <script src="js/line-chart.js"></script>
     <script src="js/stacked-column-chart.js"></script>    
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
-    <script src="js/main.js"></script>
+    <!-- <script src="node_modules/vue/dist/vue.js"></script> -->
+    <!-- <script src="../node_modules/vue/dist/vue.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script> -->
+    <!-- <script src="js/main.js"></script> -->
+    <script src="js/app.js"></script>
 </body>
 </html>
