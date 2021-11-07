@@ -15,7 +15,7 @@
     <div id="app">
         <p>@{{ message }}</p>
 
-        <example-component></example-component>
+        <example-component url="/fig05"></example-component>
     </div>
 
     <h2>Stacked Column chart</h2>
