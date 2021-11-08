@@ -16,6 +16,9 @@
         <p>@{{ message }}</p>
 
         <example-component url="/fig05"></example-component>
+
+        <h2>Stacked Column Chart from Vue SFC</h2>
+        <stacked-column-chart></stacked-column-chart>
     </div>
 
     <h2>Stacked Column chart</h2>
