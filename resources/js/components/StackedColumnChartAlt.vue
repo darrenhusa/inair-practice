@@ -9,18 +9,25 @@
 
 export default {
     name : "StackedColumnChartAlt",
+
+    props: ['title', 'categories'],
   
     mounted() {
+      console.log('inside mounted hook')
+      console.log(this.categories);
 
       Highcharts.chart('container', {
     chart: {
         type: 'column'
     },
     title: {
-        text: 'Stacked column chart'
+        text: this.title,
     },
     xAxis: {
-        categories: ['Apples', 'Oranges', 'Pears', 'Grapes', 'Bananas']
+        categories: this.categories,
+        // categories: ['Fords', 'Nissans', 'BMWs', 'Toyotos', 'Chevies']
+        // categories: ['Apples', 'Oranges', 'Pears', 'Grapes', 'Bananas']
+
     },
     yAxis: {
         min: 0,

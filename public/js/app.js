@@ -2101,16 +2101,21 @@ __webpack_require__.r(__webpack_exports__);
 // Exporting(Highcharts);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "StackedColumnChartAlt",
+  props: ['title', 'categories'],
   mounted: function mounted() {
+    console.log('inside mounted hook');
+    console.log(this.categories);
     Highcharts.chart('container', {
       chart: {
         type: 'column'
       },
       title: {
-        text: 'Stacked column chart'
+        text: this.title
       },
       xAxis: {
-        categories: ['Apples', 'Oranges', 'Pears', 'Grapes', 'Bananas']
+        categories: this.categories // categories: ['Fords', 'Nissans', 'BMWs', 'Toyotos', 'Chevies']
+        // categories: ['Apples', 'Oranges', 'Pears', 'Grapes', 'Bananas']
+
       },
       yAxis: {
         min: 0,
